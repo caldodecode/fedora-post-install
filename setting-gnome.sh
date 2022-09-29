@@ -10,8 +10,12 @@ dnf install -y \
 ### SET DARK THEME GTK4+ ###
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
-### SET DARK THEME GTK3- ###
-gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+### SET DARK THEME GTK3 (Legacy Applications) ###
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
+### SET ALT+TAB TO SWITCH WINDOWS
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Alt>Tab']"
 
 ### DOWNLOAD BACKGROUND ###
 curl -L --output wallpaper.jpg https://lh3.googleusercontent.com/drive-viewer/AJc5JmS6t5f1Jb8Jd5Bpi2C7F6lb4GPMMJ8QCLBnddA5prHm3nMuSsMq5OGDzsgbEPkydEgzaXrJ378=w1920-h1005
