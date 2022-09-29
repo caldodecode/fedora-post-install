@@ -31,4 +31,4 @@ gsettings set org.gnome.desktop.background picture-uri-dark  file://$(pwd)/wallp
 gsettings set org.gnome.desktop.background picture-uri       file://$(pwd)/wallpaper.jpg
 
 ### START GDM ###
-gdm
+sudo gdm
