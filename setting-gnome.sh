@@ -1,7 +1,7 @@
 ### INSTALL GNOME ###
 sudo dnf install -y \
  gdm \
- google-noto-fonts-common \
+ abattis-cantarell-fonts \
  gnome-themes-extra \
  gnome-shell \
  gnome-terminal \
