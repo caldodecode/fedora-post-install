@@ -2,6 +2,7 @@
 sudo dnf install -y \
  gdm \
  abattis-cantarell-fonts \
+ adobe-source-code-pro-fonts \
  gnome-themes-extra \
  gnome-shell \
  gnome-terminal \
@@ -28,3 +29,6 @@ sudo curl -L --output wallpaper.jpg https://lh3.googleusercontent.com/drive-view
 ### SET BACKGROUND ###
 gsettings set org.gnome.desktop.background picture-uri-dark  file://$(pwd)/wallpaper.jpg
 gsettings set org.gnome.desktop.background picture-uri       file://$(pwd)/wallpaper.jpg
+
+### START GDM ###
+gdm
