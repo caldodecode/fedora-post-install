@@ -5,8 +5,13 @@ dnf install -y \
  gnome-themes-extra \
  gnome-shell \
  gnome-terminal \
- gnome-tweaks 
-  
+ gnome-tweaks \
+ nautilus \
+ dbus-x11 
+
+### SET DEFAULT TARGET AS GRAPHICAL ###
+systemctl set-default graphical.target 
+
 ### SET DARK THEME GTK4+ ###
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
@@ -23,6 +28,3 @@ curl -L --output wallpaper.jpg https://lh3.googleusercontent.com/drive-viewer/AJ
 ### SET BACKGROUND ###
 gsettings set org.gnome.desktop.background picture-uri-dark  file://$(pwd)/wallpaper.jpg
 gsettings set org.gnome.desktop.background picture-uri       file://$(pwd)/wallpaper.jpg
-
-### SET DEFAULT TARGET AS GRAPHICAL ###
-systemctl set-default graphical.target 
