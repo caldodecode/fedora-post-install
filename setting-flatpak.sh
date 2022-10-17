@@ -1,8 +1,8 @@
 ###
-dnf install -y dialog
+sudo dnf install -y dialog
 
 ### FLATPAKS
-dnf install -y flatpak
+sudo dnf install -y flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ### INSTALL FLATPAKS
@@ -18,7 +18,6 @@ INST_FLATPAKS=$(dialog \
   org.remmina.Remmina                  "MAINTENANCE       Remmina"                    on \
   nl.hjdskes.gcolor3                   "DEV               Color Picker"               on \
   org.filezillaproject.Filezilla       "DEV               FileZilla"                  on \
-  md.obsidian.Obsidian                 "DEV               Obsidian"                   on \
   io.dbeaver.DBeaverCommunity          "DEV               DBeaver Community"          on \
   com.mattjakeman.ExtensionManager     "GNOME             Extension Manager"          on \
   org.gnome.Characters                 "GNOME             Characters"                 on \
@@ -31,6 +30,7 @@ INST_FLATPAKS=$(dialog \
   org.libretro.RetroArch               "GAMES             RetroArch"                  on \
   com.github.jeromerobert.pdfarranger  "OFFICE            PDF Arranger"               on \
   org.libreoffice.LibreOffice          "OFFICE            LibreOffice"                on \
+  md.obsidian.Obsidian                 "PFFICE            Obsidian"                   on \
   studio.kx.carla                      "AUDIO & VIDEO     Carla"                      on \
   org.ardour.Ardour                    "AUDIO & VIDEO     Ardour"                     on \
   com.obsproject.Studio                "AUDIO & VIDEO     OBS Studio"                 on \
